@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Secrets — NEVER commit
+.env
+
+# Runtime state (generated while running)
+data/state.json
+data/*.tmp
+
+# Logs
+*.log
+
+# OS / editor junk
+Thumbs.db
+.DS_Store

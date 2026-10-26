@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{SUBJECT}}</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f6fb;font-family:Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f6fb;padding:32px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e6e9f2;">
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#4f46e5,#7c3aed);padding:24px 28px;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="44" height="44" align="center" valign="middle"
+                      style="background:#ffffff;border-radius:10px;font-size:17px;font-weight:bold;color:#4f46e5;">
+                    {{APP_INITIALS}}
+                  </td>
+                  <td style="padding-left:12px;color:#ffffff;font-size:15px;font-weight:bold;">
+                    {{APP_NAME}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Body -->
+          <tr>
+            <td style="padding:30px 28px 10px 28px;">
+              <p style="margin:0 0 6px 0;font-size:13px;color:#8b90a5;text-transform:uppercase;letter-spacing:.5px;">
+                Auto Reply
+              </p>
+              <h1 style="margin:0 0 18px 0;font-size:21px;color:#171a2b;">
+                Re: {{SUBJECT}}
+              </h1>
+              <p style="margin:0 0 16px 0;font-size:15px;color:#3c4159;">
+                Hi {{SENDER_NAME}},
+              </p>
+              <div style="font-size:15px;color:#3c4159;line-height:1.6;">
+                {{MESSAGE_HTML}}
+              </div>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:22px 28px 26px 28px;">
+              <div style="border-top:1px solid #eef0f7;padding-top:16px;font-size:13px;color:#8b90a5;">
+                Sent automatically on {{DATE}} &middot; &copy; {{YEAR}} {{APP_NAME}}
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
