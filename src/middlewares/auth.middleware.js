@@ -4,8 +4,8 @@
  * =============================================================================
  *  Guards every /api/* route. Clients must send the key in one of:
  *
- *      Header:   x-api-key: fc6028d17be93a54
- *      Query:    ?api_key=fc6028d17be93a54   (fallback for quick browser tests)
+ *      Header:   x-api-key: <your-api-key>
+ *      Query:    ?api_key=<your-api-key>   (fallback for quick browser tests)
  *
  *  Behaviour:
  *    - API_KEY missing on the server -> 503 (misconfiguration, fail closed)
