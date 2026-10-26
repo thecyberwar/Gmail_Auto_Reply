@@ -4,6 +4,14 @@ A **backend-only** Node.js service that automatically replies to every new email
 
 ---
 
+## 📊 System Flow Diagram
+
+![System flow sequence diagram — inbox loop, IMAP, state, hooks, auto-reply service, template, SMTP](./code_digram.svg)
+
+*Sequence diagram of one poll cycle: the inbox loop fetches new UIDs over IMAP, checks `data/state.json`, emits `email:new`, and the auto-reply service renders the HTML template and sends the reply over SMTP.*
+
+---
+
 ## ✨ Features
 
 - **Automatic replies** — checks the inbox every 45 seconds (IMAP) and replies over SMTP
